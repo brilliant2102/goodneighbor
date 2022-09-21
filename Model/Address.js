@@ -2,22 +2,18 @@ const Address = (Sequelize, DataTypes) => {
 	const model = Sequelize.define(
 		"address",
 		{
-			member_id: {
+			address_id: {
 				type: DataTypes.INTEGER,
 				allowNull: false,
 				primaryKey: true,
 				autoIncrement: true,
 			},
-			user_id: {
-				type: DataTypes.STRING(20),
+			city: {
+				type: DataTypes.STRING(5),
 				allowNull: false,
 			},
-			user_pw: {
+			dong: {
 				type: DataTypes.STRING(20),
-				allowNull: false,
-			},
-			user_name: {
-				type: DataTypes.STRING(10),
 				allowNull: false,
 			},
 		},

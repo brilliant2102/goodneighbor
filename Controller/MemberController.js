@@ -1,5 +1,5 @@
 // const { User } = require("../Model");
 
-exports.main = (req, res) => {
+exports.member = (req, res) => {
 	res.render("index");
 };
